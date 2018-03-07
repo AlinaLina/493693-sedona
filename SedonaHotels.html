@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="#" alt="logo">
+    </div>
+    <div class="menu">
+      <ul class="header_menu">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и Видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="selection_block">
+      <form class="selection_form" action="http://htmlacademy.ru" method="post">
+        <fieldset class="infrastructure_item">
+          <h2 class="selection_title">Инфраструктура:</h2>
+          <input type="checkbox" id="pool" name="pool" checked hidden>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" id="parking" name="parking" hidden>
+          <label for="parking">Парковка</label>
+          <input type="checkbox" id="wifi" name="wifi" hidden>
+          <label for="wifi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="house_item">
+          <h2 class="selection_title">Тип жилья:</h2>
+          <input type="checkbox" id="hotel" name="hotel" checked hidden>
+          <label for="hotel">Гостиница</label>
+          <input type="checkbox" id="motel" name="motel" hidden>
+          <label for="motel">Мотель</label>
+          <input type="checkbox" id="apartments" name="apartments" hidden>
+          <label for="apartments">Апартаменты</label>
+        </fieldset>
+        <div class="price_item">
+          <h2 class="selection_title">Стоимость в сутки (P):</h2>
+          <div class="price-range">
+            <p class="start-price">От 0</p>
+            <p class="end-price">До 3000</p>
+          </div>
+          <button class="selection_btn" type="button">Показать</button>
+        </div>
+      </form>
+    </section>
+    <section class="sorting_block">
+      <div class="sorting_result">
+        <h2 class="sorting_title">Найдено: 3</h2>
+      </div>
+      <div class="sorting_range">
+        <span>Сортировка:</span>
+        <ul class="sorting_range_list">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
+      </div>
+      <div class="sorting_pointer">
+        <div class="top_pointer">
+        </div>
+        <div class="bottom_pointer">
+        </div>
+      </div>
+    </section>
+    <section class="result_block">
+      <div class="result_item">
+        <div class="prop_img">
+          <img src="#" alt="AmaraResort">
+        </div>
+        <h1 class="prop_title">
+          <a href="#">Amara Resort & Spa</a>
+        </h1>
+        <div class="prop_description">
+          <span>Гостиница</span>
+          <span>От 4000 Р.</span>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn-more" name="more">Подробнее</a>
+          <a href="#" class="btn-reserve" name="reserve">Забронировать</a>
+        </div>
+        <div class="prop_rating">
+          <div class="rating_stars">
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+          </div>
+          <div class="text_rating">
+            <span>Рейтинг 8,5</span>
+          </div>
+        </div>
+      </div>
+      <div class="result_item">
+        <div class="prop_img">
+          <img src="#" alt="DesertQuailInn">
+        </div>
+        <h1 class="prop_title">
+          <a href="#">Desert Quail Inn</a>
+        </h1>
+        <div class="prop_description">
+          <span>Мотель</span>
+          <span>От 3000 Р.</span>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn-more" name="more">Подробнее</a>
+          <a href="#" class="btn-reserve" name="reserve">Забронировать</a>
+        </div>
+        <div class="prop_rating">
+          <div class="rating_stars">
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+          </div>
+          <div class="text_rating">
+            <span>Рейтинг 8,9</span>
+          </div>
+        </div>
+      </div>
+      <div class="result_item">
+        <div class="prop_img">
+          <img src="#" alt="VillasAtPocoDiablo">
+        </div>
+        <h1 class="prop_title">
+          <a href="#">Villas At Poco Diablo</a>
+        </h1>
+        <div class="prop_description">
+          <span>Апартаменты</span>
+          <span>От 2000 Р.</span>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn-more" name="more">Подробнее</a>
+          <a href="#" class="btn-reserve" name="reserve">Забронировать</a>
+        </div>
+        <div class="prop_rating">
+          <div class="rating_stars">
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+            <div class="stars_item"></div>
+          </div>
+          <div class="text_rating">
+            <span>Рейтинг 9,2</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="page_footer">
+      <a href="#">#VisitSedona</a>
+    </div>
+    <div class="page_footer">
+      <ul class="footer_menu">
+        <li>
+          <a href="link_tw"></a></li>
+        <li>
+          <a href="link_fb"></a></li>
+        <li>
+          <a href="link_vk"></a></li>
+      </ul>
+      <div class="page_footer">
+        <span>Website By</span>
+        <div class="footer_logo">
+          <a class="academy" href="https://htmlacademy.ru"><img src="#" alt="HTMLAcademy"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
