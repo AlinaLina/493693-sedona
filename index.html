@@ -89,17 +89,29 @@
       </div>
       <div class="input_form">
         <form action="https://htmlacademy.ru" method="get">
-          <label for="arrival">Дата Заезда</label>
-          <input type="date" name="arrival" id="arrival">
-          <label for="depature">Дата Выезда</label>
-          <input type="date" name="departure" id="departure">
-          <label for="adults">Взрослые></label>
-          <input type="number" name="adults" id="adults">
-          <label for="children">Дети</label>
-          <input type="number" id="children" name="children">
+          <div class="form_item">
+            <label for="arrival">Дата Заезда</label>
+            <input type="date" name="arrival" id="arrival" value="24 апреля 2017">
+            <span class="input_date">
+              <img src="img/calendar.svg" alt="Calendar" width="22" height="22">
+            </span>
+          </div>
+          <div class="form_item">
+            <label for="depature">Дата Выезда</label>
+            <input type="date" name="departure" id="departure" value="4 июля 2017">
+            <span class="input_date">
+              <img src="img/calendar.svg" alt="Calendar" width="22" height="22">
+            </span>
+          </div>
+          <div class="form_item">
+            <label for="adults">Взрослые></label>
+            <input type="number" name="adults" id="adults" value="2">
+            <label for="children">Дети</label>
+            <input type="number" id="children" name="children">
+          </div>
           <button class="btn" type="submit">Найти</button>
         </form>
-      </div>
+        </div>
     </section>
     <section class="maps">
       <img src="img/maps.jpg" alt="maps">
