@@ -31,7 +31,7 @@
             <h2 class="main_title">Инфраструктура:</h2>
             <ul class="infrastructure">
               <li class="check_box">
-                <input type="checkbox" id="pool" name="pool" checked hidden>
+                <input type="checkbox" id="pool" name="pool" hidden>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="check_box">
@@ -48,7 +48,7 @@
             <h2 class="main_title">Тип жилья:</h2>
             <ul class="house">
               <li class="check_box">
-                <input type="checkbox" id="hotel" name="hotel" checked hidden>
+                <input type="checkbox" id="hotel" name="hotel" hidden>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="check_box">
@@ -61,11 +61,18 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="price_item">
-            <h2 class="main_title">Стоимость в сутки (P):</h2>
-            <div class="price-range">
-              <p class="start-price">От 0</p>
-              <p class="end-price">До 3000</p>
+          <fieldset class="price_range">
+            <h2 class="price_range_title">Стоимость в сутки (P):</h2>
+            <div class="price_controls">
+              <label class="start_price">от <input type="text" name="start_price" value="0"></label>
+              <label class="end_price">до <input type="text" name="end_price" value="3000"></label>
+            </div>
+            <div class="range_controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range_toggle range_toggle_min"></div>
+              <div class="range_toggle range_toggle_max"></div>
             </div>
             <button class="selection_btn" type="submit">Показать</button>
           </fieldset>
@@ -91,8 +98,12 @@
         </div>
         <div class="sorting_range">
           <ul class="sorting_range_item">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="side_sort_item" tabindex="0">
+              От большего рейтинга к меньшему
+            </li>
+            <li class="side_sort_item active_item" tabindex="0">
+              От меньшего рейтинга к большему
+            </li>
           </ul>
         </div>
       </section>
@@ -189,7 +200,7 @@
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="page_footer">
         <a href="#">#VisitSedona</a>
       </div>
@@ -208,7 +219,7 @@
         <div class="page_footer">
           <span class="footer_pre_logo">Website By</span>
           <div class="footer_logo">
-            <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/logo_htmlacademy.svg" alt="HTMLAcademy" width="115" height="41"></a>
+            <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="HTMLAcademy" width="115" height="41"></a>
           </div>
         </div>
       </div>
