@@ -30,14 +30,14 @@
           <img src="img/intro.jpg" alt="Sedona" width="1200" height="508">
         </div>
         <div class="intro_title">
-          <h2 class="main_title">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+          <h2 class="main_title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </section>
       <section class="content">
         <div class="content_menu">
-          <div class="content_header">
-            <h2 class="content_header_title">Настоящий городок</h2>
+          <div class="content_body">
+            <h2 class="content_body_title">Настоящий городок</h2>
             <span class="content_number">- №1 -</span>
             <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -48,25 +48,25 @@
         <div class="content_menu">
           <div class="content_body">
             <h2 class="content_body_title">Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
           <div class="content_body">
             <h2 class="content_body_title">Еда</h2>
-            <p>Всегда заказывайте фирменный бургег, Вы не разочаруетесь</p>
+            <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
           <div class="content_body">
             <h2 class="content_body_title">Сувениры</h2>
-            <p>Не только китайского, но и местного производства</p>
+            <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
         <div class="content_menu">
-          <div class="content_header">
-            <h2 class="content_header_title">Там есть мост дьявола</h2>
-            <span class="content_number">- №2 -</span>
-            <p>Да, по нему можно пройти, если Вы конечно осмелитесь</p>
-          </div>
           <div class="content_img">
             <img src="img/devil_bridge.jpg" alt="Bridge" width="800" height="401">
+          </div>
+          <div class="content_body">
+            <h2 class="content_body_title">Там есть<br> мост дьявола</h2>
+            <span class="content_number">- №2 -</span>
+            <p>Да, по нему можно пройти, если Вы конечно осмелитесь</p>
           </div>
         </div>
         <div class="content_menu">
@@ -90,7 +90,7 @@
       <section class="search">
         <div class="main_search">
           <h2 class="main_search_title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <a class="btn main_title" onclick="event.preventDefault()" href="form.html">
             <p class="btn_item">Поиск гостиницы в Седоне</p>
           </a>
@@ -99,28 +99,28 @@
           <div class="input_form">
             <form action="https://htmlacademy.ru" method="get">
               <div class="form_item">
-                <label for="arrival">Дата Заезда</label>
-                <input type="date" name="arrival" id="arrival" value="24 апреля 2017">
-                <span class="input_date">
-              <img src="img/calendar.svg" alt="Calendar" width="22" height="22">
-            </span>
+                <label for="arrival">Дата Заезда:</label>
+                <input type="text" id="arrival" name="arrival" value="24 апреля 2017">
+                <span class="input_date" tabindex="0">
+                  <img src="img/calendar.svg" alt="calendar" width="22" height="22">
+                </span>
               </div>
               <div class="form_item">
-                <label for="depature">Дата Выезда</label>
-                <input type="date" name="departure" id="departure" value="4 июля 2017">
-                <span class="input_date">
-              <img src="img/calendar.svg" alt="Calendar" width="22" height="22">
-            </span>
+                <label for="depature">Дата Выезда:</label>
+                <input type="text" id="departure" name="departure" value="4 июля 2017">
+                <span class="input_date" tabindex="0">
+                  <img src="img/calendar.svg" alt="calendar" width="22" height="22">
+                </span>
               </div>
               <div class="form_item">
-                <label for="adults">Взрослые></label>
-                <input type="number" name="adults" id="adults" value="2">
+                <label for="adults">Взрослые:</label>
+                <input type="text" name="adults" id="adults" value="2">
                 <span class="form_item_btn add_btn_adult" aria-label="Больше" tabindex="0">+</span>
                 <span class="form_item_btn remove_btn_adult" aria-label="Меньше" tabindex="0">–</span>
-                <label for="children">Дети</label>
-                <input type="number" id="children" name="children">
-                <span class="form_item_btn add_btn_child" aria-label="Больше" tabindex="0">+</span>
-                <span class="form_item_btn remove_btn_child" aria-label="Меньше" tabindex="0">–</span>
+                <input type="text" name="children" id="children" value="0">
+                <label for="children">Дети:</label>
+                <span class="add_btn_child" aria-label="Больше" tabindex="0">+</span>
+                <span class="remove_btn_child" aria-label="Меньше" tabindex="0">–</span>
               </div>
               <button class="btn" type="submit">Найти</button>
             </form>
@@ -148,12 +148,10 @@
             <a href="#">YT</a>
           </li>
         </ul>
-        <div class="page_footer">
-          <span class="footer_pre_logo">Website By</span>
-          <div class="footer_logo">
-            <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="HTMLAcademy" width="115" height="41"></a>
-          </div>
-        </div>
+      </div>
+      <div class="page_footer">
+        <span class="footer_pre_logo">website by</span>
+        <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="HTMLAcademy" width="115" height="41"></a>
       </div>
     </footer>
   </div>

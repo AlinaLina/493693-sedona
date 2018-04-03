@@ -31,15 +31,15 @@
             <h2 class="main_title">Инфраструктура:</h2>
             <ul class="infrastructure">
               <li class="check_box">
-                <input type="checkbox" id="pool" name="pool" hidden>
+                <input type="checkbox" id="pool" name="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="check_box">
-                <input type="checkbox" id="parking" name="parking" hidden>
+                <input type="checkbox" id="parking" name="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li class="check_box">
-                <input type="checkbox" id="wifi" name="wifi" hidden>
+                <input type="checkbox" id="wifi" name="wifi">
                 <label for="wifi">Wi-Fi</label>
               </li>
             </ul>
@@ -48,15 +48,15 @@
             <h2 class="main_title">Тип жилья:</h2>
             <ul class="house">
               <li class="check_box">
-                <input type="checkbox" id="hotel" name="hotel" hidden>
+                <input type="checkbox" id="hotel" name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="check_box">
-                <input type="checkbox" id="motel" name="motel" hidden>
+                <input type="checkbox" id="motel" name="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="check_box">
-                <input type="checkbox" id="apartments" name="apartments" hidden>
+                <input type="checkbox" id="apartments" name="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -95,16 +95,16 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="sorting_range">
-          <ul class="sorting_range_item">
-            <li class="side_sort_item" tabindex="0">
-              От большего рейтинга к меньшему
-            </li>
-            <li class="side_sort_item active_item" tabindex="0">
-              От меньшего рейтинга к большему
-            </li>
-          </ul>
+          <div class="sorting_range">
+            <ul class="sorting_range_item">
+              <li class="side_sort_item" tabindex="0">
+                От большего рейтинга к меньшему
+              </li>
+              <li class="side_sort_item active_item" tabindex="0">
+                От меньшего рейтинга к большему
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="result_block">
@@ -117,8 +117,8 @@
               <a href="#">Amara Resort &amp; Spa</a>
             </h1>
             <div class="prop_description_text">
-              <span>Гостиница</span>
-              <span>От 4000 Р.</span>
+              <span class="prop_description_text_item">Гостиница</span>
+              <span class="prop_description_text_item">От 4000 Р.</span>
             </div>
             <div class="prop_buttons">
               <a href="#" class="btn_more" name="more">Подробнее</a>
@@ -127,11 +127,7 @@
           </div>
           <div class="prop_rating">
             <div class="rating_stars">
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
+              <div class="stars_item" aria-label="Четыре звезды"></div>
             </div>
             <div class="text_rating">
               <span>Рейтинг 8,5</span>
@@ -147,8 +143,8 @@
               <a href="#">Desert Quail Inn</a>
             </h1>
             <div class="prop_description_text">
-              <span>Мотель</span>
-              <span>От 3000 Р.</span>
+              <span class="prop_description_text_item">Мотель</span>
+              <span class="prop_description_text_item">От 3000 Р.</span>
             </div>
             <div class="prop_buttons">
               <a href="#" class="btn_more" name="more">Подробнее</a>
@@ -157,11 +153,7 @@
           </div>
           <div class="prop_rating">
             <div class="rating_stars">
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
+              <div class="stars_item" aria-label="Три звезды"></div>
             </div>
             <div class="text_rating">
               <span>Рейтинг 8,9</span>
@@ -177,8 +169,8 @@
               <a href="#">Villas At Poco Diablo</a>
             </h1>
             <div class="prop_description_text">
-              <span>Апартаменты</span>
-              <span>От 2000 Р.</span>
+              <span class="prop_description_text_item">Апартаменты</span>
+              <span class="prop_description_text_item">От 2000 Р.</span>
             </div>
             <div class="prop_buttons">
               <a href="#" class="btn_more" name="more">Подробнее</a>
@@ -187,11 +179,7 @@
           </div>
           <div class="prop_rating">
             <div class="rating_stars">
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
-              <div class="stars_item"></div>
+              <div class="stars_item" aria-label="Две звезды"></div>
             </div>
             <div class="text_rating">
               <span>Рейтинг 9,2</span>
@@ -216,12 +204,10 @@
             <a href="#">YT</a>
           </li>
         </ul>
-        <div class="page_footer">
-          <span class="footer_pre_logo">Website By</span>
-          <div class="footer_logo">
-            <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="HTMLAcademy" width="115" height="41"></a>
-          </div>
-        </div>
+      </div>
+      <div class="page_footer">
+        <span class="footer_pre_logo">website by</span>
+        <a class="footer_after_logo" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.svg" alt="HTMLAcademy" width="115" height="41"></a>
       </div>
     </footer>
   </div>
